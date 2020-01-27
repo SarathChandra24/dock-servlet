@@ -7,13 +7,10 @@ public class TestSQL {
         System.out.println("HI");
         tee();
     }
-
-
-    private static void tee(){
+    static void tee(){
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            //Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Entered Tee");
-
             Connection conn = DriverManager.getConnection(CredentialOfDataBase.DB_URL + CredentialOfDataBase.DB_name,
                     CredentialOfDataBase.DB_USER,CredentialOfDataBase.DB_password);
             System.out.println("Connected via MysqlDB 3308");
@@ -32,9 +29,9 @@ public class TestSQL {
             e.printStackTrace();
             System.out.println("sql Exception");
         }
-        catch (ClassNotFoundException e) {
-            System.out.println("Class is not found");
-            e.printStackTrace();
-        }
+//        catch (ClassNotFoundException e) {
+//            System.out.println("Class is not found");
+//            e.printStackTrace();
+//        }
     }
 }

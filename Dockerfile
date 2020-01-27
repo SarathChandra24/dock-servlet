@@ -8,3 +8,6 @@ COPY ./lib/* /usr/local/tomcat/lib/
 EXPOSE 8080
 
 CMD ["catalina.sh","run"]
+
+#docker build -t sarathchandra24/eid-tomcat .
+#docker run --net dock-servlet_default --ip 172.18.0.5 -p 9080:8080 --name sarath-tomcat sarathchandra24/eid-tomcat

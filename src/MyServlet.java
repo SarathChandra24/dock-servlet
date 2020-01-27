@@ -14,7 +14,6 @@ public class MyServlet extends HttpServlet {
         pw.println("<p>Welcome </p>");
         pw.println("</body></html>");
     }
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");

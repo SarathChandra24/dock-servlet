@@ -15,6 +15,7 @@ public class Validation extends javax.servlet.http.HttpServlet {
         String mobile = request.getParameter("mobile");
         PrintWriter pw = response.getWriter();
         System.out.println("Entered to the do post");
+        TestSQL.tee();
         try {
 
             response.setContentType("text/html");
@@ -51,7 +52,7 @@ public class Validation extends javax.servlet.http.HttpServlet {
                 pw.println("<h1>" + name + " with CIF " + custid+" is <b>DOES NOT Exist</b><h1>");
             }
             pw.println("</body</html>");
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException  e) {
             pw.println("Database Connection error." +
                     " Error may be due to IP ");
             System.out.println("Error at connecting to database. Please check whether the database id reachable or not.");
