@@ -1,0 +1,1 @@
+docker build -t sarath-sql .\Dockerfiles\mysql-dockerFile\.

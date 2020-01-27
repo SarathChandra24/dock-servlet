@@ -1,0 +1,16 @@
+# Use root/example as user/password credentials
+# "docker-compose build" it is for creating an image
+#
+#  docker network connect bridge MysqlDB
+#docker run --name mysqlDB -e MYSQL_ROOT_PASSWORD="" -d mysql:latest
+version: '3.1'
+
+services:
+  mysql-dev:
+    image: mysql:latest
+    container_name: myown-sql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABSE: eidiko
+    ports:
+      - "3308:3306"
