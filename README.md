@@ -40,7 +40,7 @@ Missing any od them may cause error or stop the process flow.
     #create a network in docker
     docker network create --subnet=172.18.0.0/16 <dock-servlet_default>
 ```
-* MySQL
+* MySQL Container
     1. Open dock-servlet/sql/Dockerfile.
     2. Here I used my own SQL file (dump.sql). Please use your own SQL file
     3. After that open Terminal and go to the Dockerfile location
@@ -51,7 +51,7 @@ Missing any od them may cause error or stop the process flow.
     > docker run --net <dock-servlet_default> --ip <172.18.0.6> -p 9306:3306 --name sarath-sql <sarathchandra24>/<mysql>:<latest>
  ```
 **Please note the IP address and this is the same IP for the Mysql in Docker network and Paste it in src/dbs/CredentialsOfDataBase.java** 
-
+* Tomcat  
  
 ## Built With
 
