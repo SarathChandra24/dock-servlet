@@ -33,9 +33,26 @@ Missing any od them may cause error or stop the process flow.
 4. Refer to [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) for installing the IBM Cloud CLI on your machine.
 
 ## Deployment
-* Open dock-servlet/Dockerfile. Here I used my own war file which is not present 
+###Building Containers
+* Docker setup
+```
+    docker login
+    #create a network in docker
+    docker network create --subnet=172.18.0.0/16 <dock-servlet_default>
+```
+* MySQL
+    1. Open dock-servlet/sql/Dockerfile.
+    2. Here I used my own SQL file (dump.sql). Please use your own SQL file
+    3. After that open Terminal and go to the Dockerfile location
+    4. do the following commands
+ ``` 
+    > docker build -t <docker_usernamr>/repository_name:tag .
+        Example: docker build -t  sarathchanda24/mysql:latest .
+    > docker run --net <dock-servlet_default> --ip <172.18.0.6> -p 9306:3306 --name sarath-sql <sarathchandra24>/<mysql>:<latest>
+ ```
+**Please note the IP address and this is the same IP for the Mysql in Docker network and Paste it in src/dbs/CredentialsOfDataBase.java** 
 
-
+ 
 ## Built With
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
