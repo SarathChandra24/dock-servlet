@@ -33,7 +33,7 @@ Missing any od them may cause error or stop the process flow.
 4. Refer to [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) for installing the IBM Cloud CLI on your machine.
 
 ## Deployment
-###Building Containers
+### Building Containers
 * Docker setup
 ```
     docker login
@@ -52,6 +52,7 @@ Missing any od them may cause error or stop the process flow.
  ```
 **Please note the IP address and this is the same IP for the Mysql in Docker network and Paste it in src/dbs/CredentialsOfDataBase.java** 
 * Tomcat  
+    1. 
  
 ## Built With
 
