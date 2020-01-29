@@ -160,7 +160,7 @@ Missing any od them may cause error or stop the process flow.
         #  Example: kubectl describe service mysql
         #  Note the internal IP for tomcat communication
         #  Note the NodePort
-* For testing the MySQL database use ```Public IP``` & ```Node Port```, Do Mysql Database Testing
+* For testing the MySQL database use ```Public IP``` & ```Node Port```, Do [Mysql Database Testing](#mysql-database-testing)
  ### Pushing Tomcat to IBM CLoud Kubernetes Service
   * go to ```dock-servlet/```
   * update CredentialsOfDataBase.java with the credentials of container
@@ -193,7 +193,7 @@ Missing any od them may cause error or stop the process flow.
         kubectl describe service <container_name>
         #  Example: kubectl describe service tomcat
         #  Note the NodePort
-* For testing the Tomcat Service use ```Public IP``` & ```Node Port```, Do [Tomcat Testing](https://github.com/SarathChandra24/dock-servlet#tomcat-testing) 
+* For testing the Tomcat Service use ```Public IP``` & ```Node Port```, Do [Tomcat Testing](#tomcat-testing) 
 
       
 
