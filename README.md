@@ -208,4 +208,4 @@ Missing any od them may cause error or stop the process flow.
 
 ## Authors
 
-* **Sarath Chandra Oruganti** - *Initial work* - [SarathChandra24](https://github.com/SarathChandra24)
+* **Sarath Chandra Oruganti**  - [SarathChandra24](https://github.com/SarathChandra24)
