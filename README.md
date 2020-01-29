@@ -91,7 +91,7 @@ Missing any od them may cause error or stop the process flow.
     ![MySQL_Database_Verification](images/verify_database.png)
    ### Tomcat Testing
    1. Pull up your favourite Web Browser
-   2. Type ```https://localhost:<port as mentioned above>/<war-filename>```. Example [localhost:9080/eidiko](http://localhost:9080/eidiko)
+   2. Type ```https://<IP Address>:<port as mentioned above>/<war-filename>```. Example [localhost:9080/eidiko](http://localhost:9080/eidiko)
     ![Tomcat_Verify](images/verify_tomcat.png)
 ## Deployment on IBM cloud kubernetes Service
  ### IBM CLI setup for pushing images
@@ -193,7 +193,7 @@ Missing any od them may cause error or stop the process flow.
         kubectl describe service <container_name>
         #  Example: kubectl describe service tomcat
         #  Note the NodePort
-* For testing the Tomcat Service use ```Public IP``` & ```Node Port```, Do Tomcat Testing 
+* For testing the Tomcat Service use ```Public IP``` & ```Node Port```, Do [Tomcat Testing](https://github.com/SarathChandra24/dock-servlet#tomcat-testing) 
 
       
 
