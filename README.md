@@ -32,6 +32,20 @@ Missing any od them may cause error or stop the process flow.
 3. Creating Kubernetes service [IBM Cloud Kubernetes Service](https://cloud.ibm.com/docs/containers?topic=containers-getting-started).
 4. Refer to [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) for installing the IBM Cloud CLI on your machine.
 
+### Setting up the IBM CLOUD CLI 
+   #### For Linux
+    ----- For Linux -----
+        curl -sL https://ibm.biz/idt-installer | bash
+    ----- For windows -----
+        [Net.ServicePointManager]::SecurityProtocol = "Tls12, Tls11, Tls, Ssl3"; iex(New-Object Net.WebClient).DownloadString('https://ibm.biz/idt-win-installer')  
+   
+    ibmcloud plugin install container-registry -r Bluemix
+   
+    
+   
+    
+
+
 ## Local Deployment
 * Docker setup
     
