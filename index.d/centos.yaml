@@ -1,0 +1,1143 @@
+Projects:
+  - id: 1
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7-x86_64
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: bamachrn@gmail.com
+    build-context: ./
+    depends-on: null
+
+  - id: 2
+    app-id: centos
+    job-id: django
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: Django/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 3
+    app-id: centos
+    job-id: etherpad
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: etherpad/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 4
+    app-id: centos
+    job-id: firefox
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: firefox/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 5
+    app-id: centos
+    job-id: freeipa
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: freeipa/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 6
+    app-id: centos
+    job-id: httpd
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: httpd/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 7
+    app-id: centos
+    job-id: mariadb
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: mariadb/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 8
+    app-id: centos
+    job-id: memcached
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: memcached/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 9
+    app-id: centos
+    job-id: mongo
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: mongodb/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 10
+    app-id: centos
+    job-id: owncloud
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: owncloud/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 11
+    app-id: centos
+    job-id: python
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: python/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 12
+    app-id: centos
+    job-id: qpid
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: qpid/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 13
+    app-id: centos
+    job-id: redis
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: redis/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 14
+    app-id: centos
+    job-id: registry-v2
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: registry-v2/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 15
+    app-id: centos
+    job-id: registry
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: registry/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 16
+    app-id: centos
+    job-id: ssh
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: ssh/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 17
+    app-id: centos
+    job-id: systemd
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: systemd/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 18
+    app-id: centos
+    job-id: tools
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: tools
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 19
+    app-id: centos
+    job-id: wildfly
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: wildfly/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 20
+    app-id: centos
+    job-id: wordpress
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: wordpress/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 21
+    app-id: centos
+    job-id: postgres
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: postgres/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: bamachrn@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 22
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7-x86_64
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 7
+    notify-email: bamachrn@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 23
+    app-id: centos
+    job-id: bind
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: bind/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 24
+    app-id: centos
+    job-id: kubernetes-master
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/master
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 25
+    app-id: centos
+    job-id: kubernetes-node
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/node
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 26
+    app-id: centos
+    job-id: kubernetes-apiserver
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/apiserver
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/kubernetes-master:latest
+
+  - id: 27
+    app-id: centos
+    job-id: kubernetes-controller-manager
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/controller-manager
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/kubernetes-master:latest
+
+  - id: 28
+    app-id: centos
+    job-id: kubernetes-kubelet
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/kubelet
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/kubernetes-node:latest
+
+  - id: 29
+    app-id: centos
+    job-id: kubernetes-proxy
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/proxy
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/kubernetes-node:latest
+
+  - id: 30
+    app-id: centos
+    job-id: kubernetes-scheduler
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes/scheduler
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/kubernetes-master:latest
+
+# centos base alternate tags - tempfix
+
+  - id: 31
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7-x86_64
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: centos7
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
+
+  - id: 32
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-6
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: centos6
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
+
+# CentOS_7.2.1511
+
+  - id: 33
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/mohammedzee1000/sig-cloud-instance-images
+    git-branch: 2016-11-02_12-56-14-centos_721511
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 7.2.1511
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
+
+# CentOS Dockerfiles continue
+
+  - id: 34
+    app-id: centos
+    job-id: rabbitmq
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: rabbitmq/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 35
+    app-id: centos
+    job-id: pgweb
+    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
+    git-branch: 2016-11-24_15-46-15-pgweb_container
+    git-path: pgweb/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 36
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-7.7.1908-x86_64
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 7.7.1908
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
+
+  - id: 37
+    app-id: centos
+    job-id: elasticsearch
+    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
+    git-branch: 2017-04-10_11-32-10-elastic
+    git-path: elasticsearch/centos7
+    target-file: Dockerfile.24
+    desired-tag: 2.4.0
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 38
+    app-id: centos
+    job-id: cgit
+    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
+    git-branch: 2017-03-31_12-40-00-cgit_container
+    git-path: cgit/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 39
+    app-id: centos
+    job-id: moodle
+    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
+    git-branch: 2017-04-03_16-56-49-moodle_container
+    git-path: moodle/centos7
+    target-file: Dockerfile
+    desired-tag: 3.1
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 40
+    app-id: centos
+    job-id: phppgadmin
+    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
+    git-branch: 2017-04-17_16-50-48-phppgadmin
+    git-path: phppgadmin/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 42
+    app-id: centos
+    job-id: sentry
+    git-url: https://github.com/centos/CentOS-Dockerfiles
+    git-path: sentry/centos7/8.17
+    git-branch: master
+    target-file: Dockerfile
+    desired-tag: 8.17
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 43
+    app-id: centos
+    job-id: sentry
+    git-url: https://github.com/centos/CentOS-Dockerfiles
+    git-path: sentry/centos7/8.18
+    git-branch: master
+    target-file: Dockerfile
+    desired-tag: 8.18
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 44
+    app-id: centos
+    job-id: kubernetes-sig-master
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/master
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 45
+    app-id: centos
+    job-id: kubernetes-sig-node
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/node
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 46
+    app-id: centos
+    job-id: kubernetes-sig-apiserver
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/apiserver
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/kubernetes-sig-master:latest
+
+  - id: 47
+    app-id: centos
+    job-id: kubernetes-sig-controller-manager
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/controller-manager
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/kubernetes-sig-master:latest
+
+  - id: 48
+    app-id: centos
+    job-id: kubernetes-sig-kubelet
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/kubelet
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/kubernetes-sig-node:latest
+
+  - id: 49
+    app-id: centos
+    job-id: kubernetes-sig-proxy
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/proxy
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/kubernetes-sig-node:latest
+
+  - id: 50
+    app-id: centos
+    job-id: kubernetes-sig-scheduler
+    git-url: https://github.com/CentOS/CentOS-Dockerfiles
+    git-branch: master
+    git-path: kubernetes-sig/scheduler
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: jbrooks@redhat.com
+    build-context: ./
+    depends-on: centos/kubernetes-sig-master:latest
+
+  - id: 51
+    app-id: centos
+    job-id: couchdb
+    git-url: https://github.com/dharmit/CentOS-Dockerfiles
+    git-branch: centos-container-pipeline
+    git-path: couchdb/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 52
+    app-id: centos
+    job-id: earthquake
+    git-url: https://github.com/dharmit/CentOS-Dockerfiles
+    git-branch: centos-container-pipeline
+    git-path: earthquake/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 53
+    app-id: centos
+    job-id: golang
+    git-url: https://github.com/dharmit/CentOS-Dockerfiles
+    git-branch: centos-container-pipeline
+    git-path: golang/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 54
+    app-id: centos
+    job-id: lighttpd
+    git-url: https://github.com/dharmit/CentOS-Dockerfiles
+    git-branch: centos-container-pipeline
+    git-path: lighttpd/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 55
+    app-id: centos
+    job-id: nginx
+    git-url: https://github.com/dharmit/CentOS-Dockerfiles
+    git-branch: centos-container-pipeline
+    git-path: nginx/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 56
+    app-id: centos
+    job-id: powershell
+    git-url: https://github.com/dharmit/CentOS-Dockerfiles
+    git-branch: centos-container-pipeline
+    git-path: powershell/centos7
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: shahdharmit@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+# List of SCLo SIG images begins
+  - id: 101
+    app-id: centos
+    job-id: s2i-core-centos7
+    git-url: https://github.com/sclorg/s2i-base-container.git
+    git-branch: master
+    git-path: core/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 108
+    app-id: centos
+    job-id: redis-5-centos7
+    git-url: https://github.com/sclorg/redis-container.git
+    git-branch: master
+    git-path: 5/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 109
+    app-id: centos
+    job-id: postgresql-94-centos7
+    git-url: https://github.com/sclorg/postgresql-container.git
+    git-branch: master
+    git-path: 9.4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    prebuild-script: hooks/pre_build_distgen
+    prebuild-context: /
+    depends-on: centos/centos:7
+
+  - id: 110
+    app-id: centos
+    job-id: postgresql-95-centos7
+    git-url: https://github.com/sclorg/postgresql-container.git
+    git-branch: master
+    git-path: 9.5/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    prebuild-script: hooks/pre_build_distgen
+    prebuild-context: /
+    depends-on: centos/centos:7
+
+  - id: 111
+    app-id: centos
+    job-id: postgresql-96-centos7
+    git-url: https://github.com/sclorg/postgresql-container.git
+    git-branch: master
+    git-path: 9.6/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    prebuild-script: hooks/pre_build_distgen
+    prebuild-context: /
+    depends-on: centos/centos:7
+
+  - id: 112
+    app-id: centos
+    job-id: ror-41-centos7
+    git-url: https://github.com/sclorg/ror-container.git
+    git-branch: master
+    git-path: 4.1/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 113
+    app-id: centos
+    job-id: ror-42-centos7
+    git-url: https://github.com/sclorg/ror-container.git
+    git-branch: master
+    git-path: 4.2/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 114
+    app-id: centos
+    job-id: ror-50-centos7
+    git-url: https://github.com/sclorg/ror-container.git
+    git-branch: master
+    git-path: 5.0/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 115
+    app-id: centos
+    job-id: s2i-base-centos7
+    git-url: https://github.com/sclorg/s2i-base-container.git
+    git-branch: master
+    git-path: base/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-core-centos7:latest
+
+  - id: 116
+    app-id: centos
+    job-id: mongodb-26-centos7
+    git-url: https://github.com/sclorg/mongodb-container.git
+    git-branch: master
+    git-path: 2.6/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-core-centos7:latest
+
+  - id: 117
+    app-id: centos
+    job-id: mongodb-32-centos7
+    git-url: https://github.com/sclorg/mongodb-container.git
+    git-branch: master
+    git-path: 3.2/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-core-centos7:latest
+
+  - id: 118
+    app-id: centos
+    job-id: mongodb-34-centos7
+    git-url: https://github.com/sclorg/mongodb-container.git
+    git-branch: master
+    git-path: 3.4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-core-centos7:latest
+
+  - id: 119
+    app-id: centos
+    job-id: mariadb-100-centos7
+    git-url: https://github.com/sclorg/mariadb-container.git
+    git-branch: master
+    git-path: 10.0/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ../
+    depends-on: centos/s2i-core-centos7:latest
+
+  - id: 120
+    app-id: centos
+    job-id: mariadb-101-centos7
+    git-url: https://github.com/sclorg/mariadb-container.git
+    git-branch: master
+    git-path: 10.1/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ../
+    depends-on: centos/s2i-core-centos7:latest
+
+  - id: 121
+    app-id: centos
+    job-id: mariadb-102-centos7
+    git-url: https://github.com/sclorg/mariadb-container.git
+    git-branch: master
+    git-path: 10.2/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ../
+    depends-on: centos/s2i-core-centos7:latest
+
+  - id: 123
+    app-id: centos
+    job-id: mysql-80-centos7
+    git-url: https://github.com/sclorg/mysql-container.git
+    git-branch: master
+    git-path: 8.0/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ../
+    depends-on: centos/s2i-core-centos7:latest
+
+  - id: 126
+    app-id: centos
+    job-id: nginx-114-centos7
+    git-url: https://github.com/sclorg/nginx-container.git
+    git-branch: master
+    git-path: 1.14/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-core-centos7:latest
+
+  - id: 127
+    app-id: centos
+    job-id: httpd-24-centos7
+    git-url: https://github.com/sclorg/httpd-container.git
+    git-branch: master
+    git-path: 2.4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-core-centos7:latest
+
+  - id: 129
+    app-id: centos
+    job-id: php-72-centos7
+    git-url: https://github.com/sclorg/s2i-php-container.git
+    git-branch: master
+    git-path: 7.2/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-base-centos7:latest
+
+  - id: 131
+    app-id: centos
+    job-id: python-27-centos7
+    git-url: https://github.com/sclorg/s2i-python-container.git
+    git-branch: master
+    git-path: 2.7/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-base-centos7:latest
+
+  - id: 132
+    app-id: centos
+    job-id: python-34-centos7
+    git-url: https://github.com/sclorg/s2i-python-container.git
+    git-branch: master
+    git-path: 3.4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-base-centos7:latest
+
+  - id: 133
+    app-id: centos
+    job-id: python-35-centos7
+    git-url: https://github.com/sclorg/s2i-python-container.git
+    git-branch: master
+    git-path: 3.5/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-base-centos7:latest
+
+  - id: 134
+    app-id: centos
+    job-id: python-36-centos7
+    git-url: https://github.com/sclorg/s2i-python-container.git
+    git-branch: master
+    git-path: 3.6/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-base-centos7:latest
+
+  - id: 136
+    app-id: centos
+    job-id: perl-526-centos7
+    git-url: https://github.com/sclorg/s2i-perl-container.git
+    git-branch: master
+    git-path: 5.26/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-base-centos7:latest
+
+  - id: 137
+    app-id: centos
+    job-id: ruby-22-centos7
+    git-url: https://github.com/sclorg/s2i-ruby-container.git
+    git-branch: master
+    git-path: 2.2/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-base-centos7:latest
+
+  - id: 138
+    app-id: centos
+    job-id: ruby-23-centos7
+    git-url: https://github.com/sclorg/s2i-ruby-container.git
+    git-branch: master
+    git-path: 2.3/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-base-centos7:latest
+
+  - id: 139
+    app-id: centos
+    job-id: ruby-24-centos7
+    git-url: https://github.com/sclorg/s2i-ruby-container.git
+    git-branch: master
+    git-path: 2.4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-base-centos7:latest
+
+  - id: 140
+    app-id: centos
+    job-id: passenger-40-centos7
+    git-url: https://github.com/sclorg/passenger-container.git
+    git-branch: master
+    git-path: 4.0/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-base-centos7:latest
+
+  - id: 141
+    app-id: centos
+    job-id: varnish-4-centos7
+    git-url: https://github.com/sclorg/varnish-container.git
+    git-branch: master
+    git-path: 4/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ../
+    prebuild-script: hooks/pre_build_distgen
+    prebuild-context: /
+    depends-on: centos/s2i-core-centos7:latest
+
+  - id: 144
+    app-id: centos
+    job-id: nodejs-10-centos7
+    git-url: https://github.com/sclorg/s2i-nodejs-container.git
+    git-branch: master
+    git-path: 10/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ./
+    depends-on: centos/s2i-base-centos7:latest
+
+  - id: 145
+    app-id: centos
+    job-id: sentry
+    git-url: https://github.com/centos/CentOS-Dockerfiles
+    git-path: sentry/centos7/8.22
+    git-branch: master
+    target-file: Dockerfile
+    desired-tag: 8.22
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 146
+    app-id: centos
+    job-id: sentry-sso
+    git-url: https://github.com/centos/CentOS-Dockerfiles
+    git-path: sentry-sso/centos7/8.22
+    git-branch: master
+    target-file: Dockerfile
+    desired-tag: 8.22
+    notify-email: container-status-report@centos.org
+    build-context: ./
+    depends-on: centos/centos:7
+
+  - id: 147
+    app-id: centos
+    job-id: varnish-5-centos7
+    git-url: https://github.com/sclorg/varnish-container.git
+    git-branch: master
+    git-path: 5/
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: hhorak@redhat.com
+    build-context: ../
+    prebuild-script: hooks/pre_build_distgen
+    prebuild-context: /
+    depends-on: centos/s2i-core-centos7:latest
+
+
+
+# List of SCLo SIG images ends
+
+# CentOS Atomic Base Image
+  - id: 148
+    app-id: centos
+    job-id: centos7-atomic
+    git-url: https://github.com/CentOS/atomic-container
+    git-branch: master
+    git-path: /
+    target-file: Dockerfile
+    desired-tag: latest
+    notify-email: moahmed@redhat.com
+    prebuild-script: cccp-prebuild.sh
+    prebuild-context: /
+    build-context: ./
+    depends-on: null
+
+# CentOS Atomic Base Image ends
+
+  - id: 149
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-6
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 6
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: null
+
+  - id: 150
+    app-id: centos
+    job-id: moodle
+    git-url: https://github.com/mohammedzee1000/CentOS-Dockerfiles
+    git-branch: 2017-04-03_16-56-49-moodle_container
+    git-path: moodle/centos7
+    target-file: Dockerfile.3.5
+    desired-tag: 3.5
+    notify-email: mohammed.zee1000@gmail.com
+    build-context: ./
+    depends-on: centos/centos:7
+
+#Adding centos8 entries
+  - id: 151
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-8-x86_64
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: 8
+    notify-email: bamachrn@gmail.com
+    build-context: ./
+    depends-on: null
+
+  - id: 152
+    app-id: centos
+    job-id: centos
+    git-url: https://github.com/CentOS/sig-cloud-instance-images
+    git-branch: CentOS-8-x86_64
+    git-path: docker
+    target-file: Dockerfile
+    desired-tag: centos8
+    notify-email: bamachrn@gmail.com
+    build-context: ./
+    depends-on: null
