@@ -24,4 +24,4 @@ EXPOSE 3306
 
 #docker network create --subnet=172.18.0.0/16 dock-servlet_default
 
-#docker run --net dock-servlet_default --ip 172.18.0.6 -p 9306:3306 --name sarath-sql sarathchandra24/eid-mysql:latest
+#docker run --net dock-servlet_default --ip 172.18.0.2 -p 9306:3306 --name sarath-sql sarathchandra24/eid-mysql:latest
