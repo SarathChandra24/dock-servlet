@@ -9,24 +9,24 @@ CREATE TABLE `customer_details` (
                                     `customer_name` varchar(45) NOT NULL,
                                     `contact_number` varchar(10) NOT NULL
 );
-INSERT INTO `customer_details` VALUES ('40271908','P SATYA SRI BALA','9100460807'),('41770775','T.RAJA SEKHAR','9959763773'),
-                                      ('42006651','M AISHWARYA','7093812025'),('48065669','M.MANISH KUMAR','9963305024'),
-                                      ('49901351','THIMMANI ROJA','9100656755'),('50884258','PUTTA SAI KUMAR','7989115052'),
-                                      ('51276681','R DEEKSHITHA','7013665856'),('51496154','NONWAR ANIL SIN H','9966122932'),
-                                      ('51853106','N ANURADHA','9542721356'),('52887215','NALLA ASHIKA','8187816923'),
-                                      ('54422811','T NISHMA','7995032058'),('57956522','YOGESH BHUTIA','9030366591'),
-                                      ('58104708','O SARATH CHANDRA','9440222551'),('58325890','VAKETY SRILATHA','9581048802'),
-                                      ('60924388','TERUPALLY AMULYA','9676019163'),('61815267','TALLA VRISHAB','8099941001'),
-                                      ('63901903','RAJAN JADAV','9542340008'),('64300678','SANA MANJULA','7680949414'),
-                                      ('65268297','SRIRAM SRAVANTHI','9908162809'),('66245730','SAI NIHAL AKKALI','8179041585'),
-                                      ('66710404','RAMAVATH JYOTHI','9581046224'),('67199369','PALADUGU NAVYA','9666778326'),
-                                      ('67888557','NARAM GOPAL','8466968242'),('68023335','SUBHASH REDDY','8686688068'),
-                                      ('70250379','SYED JUNAID NISHAT','7032399174'),('70763168','UDAY SURAJ K','8801083579'),
-                                      ('70814589','J REBECCA','7093707816'),('75491101','S PALNITKAR','8639193821'),
-                                      ('75763371','N RISHIDHAR REDDY','9100517267'),('77304322','T SRAVANI','7995689467'),
-                                      ('78562866','SUCHIT GURRAM','7702756366'),('82721154','SHATARAJI VINEETH','7731060098'),
-                                      ('82831528','S KRISHNA KETAN ','9808993333'),('82863960','PANTHANGI MANISHA','9603705700'),
-                                      ('83220523','VANGA MOUNA','7396964898'),('87007504','P VAISHNAVI','8185930817'),('87372487','G SUMAN','9963560218');
+INSERT INTO `customer_details` VALUES ('40271908','P SATYA SRI BALA','91004'),('41770775','T.RAJA SEKHAR','9963773'),
+                                      ('42006651','M AISHWARYA','709381'),('48065669','M.MANISH KUMAR','996334'),
+                                      ('49901351','THIMMANI ROJA','9100655'),('50884258','PUTTA SAI KUMAR','798912'),
+                                      ('51276681','R DEEKSHITHA','70136656'),('51496154','NONWAR ANIL SIN H','9122932'),
+                                      ('51853106','N ANURADHA','954272'),('52887215','NALLA ASHIKA','81878923'),
+                                      ('54422811','T NISHMA','7995058'),('57956522','YOGESH BHUTIA','9066591'),
+                                      ('58104708','O SARATH CHANDRA','9440222551'),('58325890','VAKETY SRILATHA','958802'),
+                                      ('60924388','TERUPALLY AMULYA','9019163'),('61815267','TALLA VRISHAB','8941001'),
+                                      ('63901903','RAJAN JADAV','9542348'),('64300678','SANA MANJULA','7680914'),
+                                      ('65268297','SRIRAM SRAVANTHI','9901809'),('66245730','SAI NIHAL AKKALI','8190585'),
+                                      ('66710404','RAMAVATH JYOTHI','9586224'),('67199369','PALADUGU NAVYA','968326'),
+                                      ('67888557','NARAM GOPAL','846642'),('68023335','SUBHASH REDDY','8686068'),
+                                      ('70250379','SYED JUNAID NISHAT','70174'),('70763168','UDAY SURAJ K','880579'),
+                                      ('70814589','J REBECCA','70816'),('75491101','S PALNITKAR','8639321'),
+                                      ('75763371','N RISHIDHAR REDDY','910067'),('77304322','T SRAVANI','799567'),
+                                      ('78562866','SUCHIT GURRAM','770766'),('82721154','SHATARAJI VINEETH','773098'),
+                                      ('82831528','S KRISHNA KETAN ','98089'),('82863960','PANTHANGI MANISHA','965700'),
+                                      ('83220523','VANGA MOUNA','73898'),('87007504','P VAISHNAVI','8185817'),('87372487','G SUMAN','99618');
 use eidiko;
 DROP TABLE IF EXISTS `credit_card_table`;
 CREATE TABLE `credit_card_table` (
