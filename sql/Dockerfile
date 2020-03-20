@@ -1,5 +1,7 @@
 FROM mysql
 
+MAINTAINER sarathchandraoruganti@gmail.com
+
 ENV MYSQL_DATABASE eidiko
 #change the database name to your name
 

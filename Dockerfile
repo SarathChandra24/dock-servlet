@@ -1,5 +1,7 @@
 FROM tomcat:9.0.30-jdk13-openjdk-oracle
 
+MAINTAINER sarathchandraoruganti@gmail.com
+
 #docker build -t <name of the image> <location of the file> .
 COPY ./lib/* /usr/bin/
 COPY ./lib/* /usr/local/tomcat/lib/
