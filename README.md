@@ -59,7 +59,7 @@ Missing any od them may cause error or stop the process flow.
     3. After that open Terminal and go to the Dockerfile location
     4. Building MySQL Image 
     
-            docker build -t <docker_usernamr>/<repository_name>:<tag> . 
+            docker build -t <docker_username>/<repository_name>:<tag> . 
             docker build -t  sarathchanda24/mysql:latest .
         
     5. Running the Image (Containers)
@@ -81,7 +81,7 @@ Missing any od them may cause error or stop the process flow.
 
     4. Building Tomcat Image 
          
-            docker build -t <docker_usernamr>/<repository_name>:<tag> . 
+            docker build -t <docker_username>/<repository_name>:<tag> . 
             docker build -t  sarathchanda24/tomcat:latest .
         
     5. Running the Image (Containers)
